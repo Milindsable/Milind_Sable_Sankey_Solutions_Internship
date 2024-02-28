@@ -1,0 +1,50 @@
+/* registration-form.component.css */
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 30px; 
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  p{
+    margin-top: 15px;
+  }
+  
+  /* Responsive Styles for the registration component */
+  @media screen and (max-width: 900px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  

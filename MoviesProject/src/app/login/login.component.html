@@ -1,0 +1,15 @@
+<div class="container">
+    <form class="login-form" #loginForm="ngForm" (submit)="loginUser(loginForm)">
+      <h2>Login Form</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="user.username" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+  
+      <button type="submit">Login</button>
+
+      <p>Not a user?? <a routerLink="/register">Register First</a></p>
+    </form>
+  </div>
+  
