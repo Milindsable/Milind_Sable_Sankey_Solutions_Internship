@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Payment.css">
+  <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="logo">
+    <img src="./Photos/mainlogo.jpg" alt="Logo">
+  </div>
+
+  <div class="right-section">
+      <div class="language">
+        <img src="./Photos/british.jpg" alt="British Flag">
+      </div>
+
+      <div class="help">
+        <img src="./Photos/help.jpg" alt="Help Logo">
+      </div>
+
+      <div class="profile">
+        <img src="./Photos/user.jpg" alt="User Profile" class="circular-logo">
+        <div class="user-info">
+          <p>Your Account</p>
+          <p>Anna Carinna</p>
+        </div>
+      </div>
+  </div>
+</header>
+
+
+<div class="maincontent">
+  
+  <div class="content-container">
+  <div class="section">
+    <h2>Information you need to pay attention</h2>
+    <p>Passengers are divided according to age categories.</p>
+    <p>Please Check Categories</p>
+    <img src="./Photos/flight1.jpg" alt="Image Description">
+    <h2>Your Trip Summary</h2>
+    <p>Your flight take off from ARN Gate 23A , you Enter through C Entrance. In FCO Airport in Rome You will stay 3h &45m then Exit through Gate D14. Final Destination will be SABIHA Airport and You can Exit Through L Door.</p>
+    <div class="two-texts">
+      <p><strong>Very Good: </strong> <span>2,259 Reviews</span></p>
+      <p><strong>Sustainability Level</strong></p>
+    </div>
+  </div>
+</div>
+
+
+<div class="second">
+  <h2>Payment Methods and Information</h2>
+  <h3>Price Details</h3>
+  <div class="second-div1">
+    <p><span>$ 87 </span>2 Adults</p>
+    <p><span>$ 24 </span>3 Children</p>
+    <p><span>$ 12 </span>Infant</p>
+  </div>
+  <p>---------------------------------------------------------------------------------------------------------------</p>
+  <div class="second-div2">
+    <p>Total (USD)</p>
+    <p><span>$ 157</span></p>
+  </div>
+
+  <div class="payment-container1">
+      <div class="payment-method">
+        <label for="payment-dropdown">Payment Method:</label>
+        <select id="payment-dropdown">
+          <option value="paypal">PayPal</option>
+          <option value="Googlepay">Google Pay</option>
+          <option value="phonepay">Phone Pay</option>
+          <option value="paytm">Paytm</option>
+        </select>
+      </div>
+
+      <div class="booking-for-work">
+        <label for="booking-radio">Booking for Work:</label>
+        <input type="radio" id="booking-radio" name="booking" value="work">
+        <span>Yes</span>
+      </div>
+    </div>
+
+  <div class="bank-container">
+      <div class="bank-card-info">
+        <form action="#">
+          <div class="card-details">
+            <div class="card-details1">
+              <div class="carddiv">
+              <label for="full-name">First Name</label>
+              <input type="text" id="full-name" name="full_name" placeholder="Enter Your First Name" required>
+              </div>
+
+              <div class="carddiv">
+              <label for="full-name">Last Name</label>
+              <input type="text" id="last-name" name="full_name" placeholder="Enter Your last Name" required>
+              </div>
+
+              <div class="carddiv">
+              <label for="phonenumber">Phone Number</label>
+              <input type="text" id="phonenumber" name="full_name" placeholder="Enter Your Phone Number" required>
+              </div>
+            </div>
+
+
+          <div class="card-details2">
+            <div class="carddiv">
+            <label for="card-number">Card Number</label>
+            <input type="tel" id="card-number" name="card_number" placeholder="Enter Card Number" required>
+            </div>
+
+            <div class="carddiv">
+            <label for="expiry-date">EXP Date</label>
+            <input type="text" id="expiry-date" name="expiry_date" placeholder="MM/YYYY" required>
+            </div>
+
+            <div class="carddiv">
+            <label for="cvv">CVC</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+            </div>
+          </div>
+        </div>
+          
+        
+      </div>
+    <h3>Cancellation Policy</h3>
+    <p>Get a Full Refund If You Cancel By Jun 23 (PDT).  Read More ...</p>
+    <div class="payment-buttons">
+        <button type="submit">Save If You Like It</button>
+        <button type="button" onclick="validateCardDetails()">Confirm and Pay</button>
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+
+<footer class="footer-container">
+  <div class="footer-section">
+    <div class="column">
+      <h3>About Us</h3>
+      <ul>
+        <li>Our Story</li>
+        <li>Work with Us</li>
+        <li>Press and Media</li>
+        <li>Privacy and Security</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>We offer</h3>
+      <ul>
+        <li>Trip Sponsorship</li>
+        <li>Last Minute flights</li>
+        <li>Best deals</li>
+        <li>AI Driven search</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>Headquarters</h3>
+      <ul>
+        <li>England</li>
+        <li>France</li>
+        <li>Canada</li>
+        <li>Iceland</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>Travel Blogs</h3>
+      <ul>
+        <li>Bali Travel Guide</li>
+        <li>Sri Travel Guide</li>
+        <li>Peru Travel Guide</li>
+        <li>Swiss Travel Guide</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>Activites</h3>
+      <ul>
+        <li>Tour Leading</li>
+        <li>Cruising and sailing</li>
+        <li>Camping</li>
+        <li>kayaking</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>Service</h3>
+      <ul>
+        <li>Report Error</li>
+        <li>Ask Online</li>
+        <li>Travel Insurance</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-section">
+    <div class="column-footer">
+      <img src="./Photos/visa.jpg" alt="Logo 1">
+      <img src="./Photos/americanexpress.jpg" alt="Logo 2">
+      <img src="./Photos/mastercard.jpg" alt="Logo 3">
+      <img src="./Photos/paypal.jpg" alt="Logo 4">
+    </div>
+
+    <div class="column-footer">
+      <img src="./Photos/linkedin.jpg" alt="Icon 1">
+      <img src="./Photos/telegram.jpg" alt="Icon 2">
+      <img src="./Photos/twitter.jpg" alt="Icon 3">
+      <img src="./Photos/facebook.jpg" alt="Icon 3">
+      <img src="./Photos/instagram.jpg" alt="Icon 3">
+    </div>
+
+    <div class="column">
+      <h3>Email</h3>
+      <input type="email" placeholder="Enter your email">
+      <button class="subscribe-button">Subscribe</button>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  
+  function validateCardDetails() 
+  {
+  var firstName = document.getElementById('full-name').value.trim();
+  var lastName = document.getElementById('last-name').value.trim();
+  var phoneNumber = document.getElementById('phonenumber').value.trim();
+  var cardNumber = document.getElementById('card-number').value.trim();
+  var cvc = document.getElementById('cvv').value.trim();
+  var expiryDate = document.getElementById('expiry-date').value.trim();
+
+  var nameRegex = /^[a-zA-Z]+$/;
+  var phoneRegex = /^\d{10}$/;
+  var cardNumberRegex = /^\d{16}$/;
+  var cvcRegex = /^\d{3}$/;
+  var expiryDateRegex = /^(0[1-9]|1[0-2])\/\d{4}$/;
+
+  if (!nameRegex.test(firstName)) {
+    alert('Please enter a valid first name with only alphabets.');
+    return;
+  }
+
+  if (!nameRegex.test(lastName)) {
+    alert('Please enter a valid last name with only alphabets.');
+    return;
+  }
+
+  if (!phoneRegex.test(phoneNumber)) {
+    alert('Please enter a valid 10-digit phone number.');
+    return;
+  }
+
+  if (!cardNumberRegex.test(cardNumber)) {
+    alert('Please enter a valid 16-digit card number.');
+    return;
+  }
+
+  if (!cvcRegex.test(cvc)) {
+    alert('Please enter a valid 3-digit CVV.');
+    return;
+  }
+
+  if (!expiryDateRegex.test(expiryDate)) {
+    alert('Please enter a valid expiry date in MM/YYYY format.');
+    return;
+  }
+
+  alert('Validation successful! Proceeding with payment...');
+}
+
+
+</script>
+
+
+</body>
+</html>

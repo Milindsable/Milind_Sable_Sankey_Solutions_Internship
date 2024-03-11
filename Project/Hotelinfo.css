@@ -1,0 +1,910 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.search-bar { 
+   flex-grow: 1;
+   margin: 0 10px 0 20px;
+  display: flex;
+  align-items: center;
+
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 8px;
+}
+
+.language,
+.currency,
+.help,
+.heart,
+.phone,
+.profile {
+  margin-left: 30px;
+}
+
+.circular-logo {
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 20%;
+}
+
+.profile{
+  display: flex;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 8px; /* Adjust margin as needed */
+}
+
+.user-info p {
+  margin: 0;
+}
+
+.user-info p:first-child {
+  font-weight: bold;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: white;
+  padding: 8px;
+}
+
+.nav-option {
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  color: black;
+  background-color: antiquewhite;
+}
+
+.nav-option:hover {
+  background-color: skyblue;
+}
+
+
+.main1{
+  display: flex;
+}
+
+.main2{
+  display: flex;
+}
+
+.sub-main2{
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-main3{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.info-container {
+  margin-top: 30px;
+  display: flex;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 40%;
+}
+
+.image-column {
+  width: 40%;
+}
+
+.image-column img {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 10px;
+}
+
+.text-column {
+  width: 75%;
+  padding: 20px;
+}
+
+.text-column h2 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.text-column .description {
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+
+.ratings {
+  width: 10%;
+}
+
+.text-column h3 {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.bullet-points {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.bullet-points li {
+  margin-bottom: 5px;
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.logo-points {
+  margin-top: 60px;
+  display: flex;
+}
+
+.logo-points .point p {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-points img {
+  width: 30px;
+  height: 20vw;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.logo-points p {
+  font-size: 0.9em;
+}
+
+
+
+.booking-details {
+      text-align: left;
+      margin: 20px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .section-heading img {
+      width: 30px; 
+      height: 70px; 
+      margin-right: 10px;
+    }
+
+    .section{
+      display: flex;
+    }
+
+    .inersection{
+      display: flex;
+    }
+
+    .check-in,
+    .check-out {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .bullet-points {
+      text-align: left;
+    }
+
+    .bullet-points li {
+      list-style-type: disc;
+      margin-bottom: 5px;
+    }
+
+
+
+
+
+
+ .room-details-container {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 20px;
+  width: 100%;
+}
+
+.logo-heading {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.room-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.room-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.points-container {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.point {
+  background-color: #e8f5e4;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-size: 1vw;
+}
+
+.point img {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+    .payment-container {
+  width: 70%;
+  margin: 0;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.price-summary,
+.cancellation-policy,
+.pay-later {
+  margin-bottom: 20px;
+}
+
+.price-summary p,
+.pay-later p {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.original-price,
+.discount,
+.total-price {
+  font-weight: bold;
+}
+
+
+
+
+.story-container {
+  width: 70%;
+  height: 60%;
+  margin: 50px 0 50px auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  float: right;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.special-offer {
+  margin-bottom: 5px;
+}
+
+.taxi,
+.flight {
+  margin-bottom: 50px;
+}
+
+.flight-label,
+.taxi-label {
+  font-weight: bold;
+}
+
+.flight p,
+.taxi p,
+.requests p,
+.arrival p {
+  margin-bottom: 5px;
+}
+
+.flight label,
+.taxi label,
+.requests label,
+.arrival label {
+  margin-right: 10px;
+}
+
+.requests p:nth-child(4) {
+  font-style: italic;
+}
+
+.estimated-arrival {
+  margin-top: 20px;
+}
+
+.estimated-arrival p {
+  margin-bottom: 5px;
+}
+
+.arrival {
+  margin-top: 60px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+.user-container {
+  margin-top: 30px;
+  width: 50%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  float: right;
+}
+
+.user-info1{
+  display: flex;
+}
+
+#booking-button{
+  height: 30px;
+  margin-left: 100px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.booking-details1 {
+  margin-bottom: 60px;
+}
+
+.booking-options {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.booking-options label {
+  margin-bottom: 20px;
+}
+
+.guest-information {
+  margin-bottom: 50px;
+
+}
+
+input[type="radio"]:checked ~ .guest-information {
+  display: block;
+}
+
+.name-section, .phone-section, .email-section, .lastdiv{
+  display: flex;
+  font-size: 1vw;
+}
+
+.phone-section input, .email-section input{
+  width: 20%;
+  height: 10%;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.name-section input{
+  width: 20%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+
+.main3{
+  display: flex;
+}
+
+
+.payment-container1 {
+  width: 50%;
+  margin: 0 auto;
+  float: left;
+  border: 5px black;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.payment-method,
+.booking-for-work {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+
+
+.bank-container {
+  width: 60%;
+  margin: 0 auto;
+  float: right;
+}
+
+.bank-card-info {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.card-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carddiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 1vw;
+}
+
+.card-details label,
+.card-details input {
+  width: 90%;
+}
+
+
+.payment-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  flex: 1;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+
+  .main-header {
+    padding: 8px;
+  }
+
+  .language,
+  .currency,
+  .help,
+  .heart,
+  .phone,
+  .profile {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 12px;
+  }
+
+  .search-bar input {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+/* Responsive navigation for screens 700px and below */
+@media screen and (max-width: 700px) {
+  .search-bar {
+    margin: 0 5px;
+  }
+
+  .language,
+  .currency,
+  .help,
+  .heart,
+  .phone,
+  .profile {
+    margin-left: 5px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .nav-option {
+    padding: 8px;
+    margin: 0 3px;
+    width: 100%;
+    font-size: 2vw;
+  }
+
+  .nav-button {
+    display: block;
+    background-color: antiquewhite;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .nav-button:hover + .main-nav {
+    display: flex;
+  }
+
+  .info-container {
+    width: 100%;
+  }
+
+  .image-column{
+    height: 20%;
+    width: 20%;
+  }
+  
+  .text-column {
+    width: 50%;
+    padding: 10px;
+    font-size: 2vw;
+  }
+
+  .text-column h2 {
+    font-size: 1.2em;
+  }
+
+  .text-column .description {
+    font-size: 0.7em;
+  }
+
+  .text-column h3 {
+    font-size: 1em;
+    margin-top: 15px;
+  }
+
+  .bullet-points li {
+    margin-left: 15px;
+  }
+
+  .logo-points {
+    height: 10%;
+    align-items: flex-start;
+  }
+
+
+  .logo-points p {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .logo-points img{
+    height: 250px;
+  }
+
+  .user-container {
+    width: 100%;
+  }
+
+  .main1{
+    margin-top: 155px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #booking-button {
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+
+  .name-section,
+  .phone-section,
+  .email-section,
+  .lastdiv {
+    flex-direction: column;
+  }
+
+  .phone-section input,
+  .email-section input,
+  .name-section input,
+  .lastdiv select,
+  .assistance-section select,.country-section select 
+  {
+    width: 60%;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .phone-section label,
+  .email-section label,
+  .name-section label,
+  .assistance-section label,.country-section label 
+   {
+    font-size: 2vw;
+  }
+
+  h4 {
+    font-size: 2vw;
+  }
+
+  .main2,.sub-main2{
+    flex-direction: column;
+  }
+
+  .booking-details, .room-details-container, .payment-container, .story-container{
+    width: 100%;
+    font-size: 3vw;
+  }
+
+  .booking-details h2, .room-details-container h2, .payment-container h2, .story-container h2{
+    font-size: 3vw;
+  }
+
+  .arrival h4{
+    font-size: 3vw;
+  }
+
+  .room-details-container li{
+    font-size: 3vw;
+  }
+
+  .main3{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bank-container {
+  width: 100%;
+  font-size: 3vw;
+}
+
+.bank-container label {
+  font-size: 2vw;
+}
+
+.payment-container1 {
+    width: 100%;
+    font-size: 3vw;
+ }
+
+ .footer-section {
+        flex-wrap: wrap;
+        font-size: 3em;
+        margin-left: 30px;
+      }
+
+      .footer-section > .column {
+        width: 50%;
+        margin-right: 0;
+      }
+
+      .footer-section h3 {
+        font-size: 1.2em;
+      }
+
+      .column {
+        margin-top: 10px;
+      }
+
+      .subscribe-button {
+        padding: 8px;
+      }
+
+      .column-footer {
+        margin-right: 0;
+        margin-top: 20px;
+      }
+
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+
+  .info-container,
+  .user-container {
+    width: 100%;
+  }
+
+  .image-column img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .text-column {
+    padding: 10px;
+  }
+
+  .text-column h2 {
+    font-size: 2em;
+  }
+
+  .text-column .description {
+    font-size: 2em;
+  }
+
+  .text-column h3 {
+    font-size:2em;
+    margin-top: 15px;
+  }
+
+  .bullet-points li {
+    margin-left: 15px;
+    font-size: 2em;
+  }
+
+  .logo-points {
+    align-items: flex-start;
+  }
+
+  .logo-points img {
+    width: 15%;
+    margin-right: 0;
+    margin-top: 5px;
+  }
+
+  .logo-points p {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+
+  #booking-button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .phone-section input,
+  .email-section input,
+  .name-section input {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .phone-section label,
+  .email-section label,
+  .name-section label,
+  .assistance-section label,.country-section label 
+   {
+    font-size: 3vw;
+  }
+
+  h4 {
+    font-size: 3vw;
+  }
+
+  .footer-section {
+    flex-wrap: wrap;
+    font-size: 2em;
+    margin-left: 30px;
+  }
+
+  .footer-section > .column {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  .footer-section h3 {
+    font-size: 1em;
+  }
+
+  .subscribe-button {
+    padding: 6px;
+  }
+
+  .column-footer img {
+    width: 30px;
+    height: auto;
+  }
+}
