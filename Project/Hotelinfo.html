@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Hotelinfo.css">
+  <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="logo">
+    <img src="./Photos/mainlogo.jpg" alt="Logo">
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <div class="language">
+    <img src="./Photos/british.jpg" alt="British Flag">
+  </div>
+
+  <div class="currency">
+    <img src="./Photos/dollor.jpg" alt="Dollar Logo">
+  </div>
+
+  <div class="help">
+    <img src="./Photos/help.jpg" alt="Help Logo">
+  </div>
+
+  <div class="heart">
+    <img src="./Photos/like.jpg" alt="Heart Logo">
+  </div>
+
+  <div class="phone">
+    <img src="./Photos/contact.jpg" alt="Phone Logo">
+  </div>
+
+  <div class="profile">
+    <img src="./Photos/user.jpg" alt="User Profile" class="circular-logo">
+    <div class="user-info">
+      <p>Your Account</p>
+      <p>Anna Carinna</p>
+    </div>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="nav-option">Trip</div>
+  <div class="nav-option">Deals</div>
+  <div class="nav-option">Hotel</div>
+  <div class="nav-option">Flight</div>
+  <div class="nav-option">Apartment</div>
+  <div class="nav-option">Camper</div>
+</nav>
+
+
+<div class="main1">
+
+    <div class="info-container">
+      <div class="image-column">
+        <img src="./Photos/Hotelphotos.jpg" alt="Image 1">
+      </div>
+      <div class="text-column">
+        <h2>First Hotel G</h2>
+        <p class="description">Modern Hotel at Gothenburg Central Station</p>
+        <div class="ratings">
+          <img src="./Photos/rating.jpg">
+        </div>
+        <h3><img src="./Photos/location.jpg" style="margin-right: 5px;">Location Information</h3>
+        <ul class="bullet-points">
+          <li>0 m to City Center</li>
+          <li>24 km to Landvetter Airport</li>
+          <li>2,5 km to Liseberg Amusment Park</li>
+          <li>0 m to Gothenburg Central Station</li>
+        </ul>
+        <div class="logo-points">
+          <img src="./Photos/Points.jpg" alt="Logo 1">
+          <div class="point">
+            <p>Breakfast Included</p>
+            <p>Free Wi-Fi</p>
+            <p>Free Parking</p>
+            <p>Pets are welcome</p>
+            <p>Free Laundry service</p>
+            <p>No Smoking</p>
+            <p>Free Entrace Exerciese Center</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="user-container">
+        <div class="user-info1">
+          <img src="./Photos/user.jpg" alt="User Profile" style="vertical-align: middle; width: 60px;">
+          <div class="user">
+            <p class="user-name">Anna Carinna</p>
+            <p class="user-email">Easyset24@Gmail.Com</p>
+          </div>
+          <button id="booking-button" onclick="window.location.href='./Payment.html'">Check Your Booking History ></button>
+        </div>
+        <section class="booking-details1">
+          <h4>Who Are You Booking For?</h4>
+          <div class="booking-options">
+            <label for="me">
+              <input type="radio" id="me" name="booking-for" value="me">
+              I Am The Main Guest
+            </label>
+            <label for="someone-else">
+              <input type="radio" id="someone-else" name="booking-for" value="someone-else">
+              Booking Is For Someone Else
+            </label>
+          </div>
+          <div class="guest-information">
+            <h4>Enter Your Information</h4>
+            <p>Make Sure The Information That You Have Already Written In Yoy Profile Is Correct.</p>
+          </div>
+
+
+    <form action="#">
+      <h4>Full Name</h4>
+      <div class="name-section">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first_name" placeholder="Enter Your First Name" required>
+        <label for="middle-name">Middle Name (Optional)</label>
+        <input type="text" id="middle-name" name="middle_name" placeholder="Enter Your Middle Name">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last_name" placeholder="Enter Your Last Name" required>
+      </div>
+
+
+      
+      <div class="email-section">
+        <h4>Email Address</h4>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+      </div>
+
+
+      
+      <div class="phone-section">
+        <h4>Phone Number</h4>
+        <input type="tel" id="phone-number" name="phone_number" placeholder="Enter Your Phone Number" required>
+      </div>
+
+        <h4>If You Need Assistance</h4>
+        <p>Choose An Option Based On Physical Disability Accordingly</p>
+        <div class="lastdiv">
+          <div class="assistance-section">
+            <label for="region">Choose an Option</label>
+            <select id="assistance">
+              <option value="">Please Select</option>
+              <option value="visual">Visual Impairment</option>
+              <option value="hearing">Hearing Impairment</option>
+              <option value="mobility">Mobility Impairment</option>
+              <option value="cognitive">Cognitive Impairment</option>
+            </select>
+          </div>
+
+          <div class="country-section">
+            <label for="region">Region/Country</label>
+            <select id="region" name="region" required>
+              <option value="">Please Select</option>
+              <option value="us">United States</option>
+              <option value="canada">Canada</option>
+              <option value="mexico">Mexico</option>
+              </select>
+          </div>
+        </div>
+      <button type="submit" style="margin-top: 10px;" onclick="validate()">Register Now</button>
+    </form>
+        </section>
+      </div>
+</div>
+
+<div class="main2">
+  <div class="sub-main2">
+    <div class="booking-details">
+        <h1>Your Booking Details</h1>
+
+        <div class="section">
+          <div class="section-heading">
+            <img src="./Photos/check.jpg" alt="Checkmark Image">
+            <div class="innersection">
+              <h2 class="check-in">Check-in</h2>
+              <span>2 August 2023</span>
+            </div>
+          </div>
+
+          <div class="section-heading">
+            <img src="./Photos/check.jpg" alt="Checkmark Image">
+            <div class="innersection">
+              <h2 class="check-in">Check-out</h2>
+              <span>6 August 2023</span>
+            </div>
+          </div>
+        </div>
+        <ul class="bullet-points">
+          <li>You will stay 4 Nights</li>
+          <li>You selected 2 Rooms for:</li>
+          <li>2 Adults</li>
+          <li>3 Childrens (12 ,7 and 5 Years Old)</li>
+          <li>0 Infant</li>
+        </ul>
+      </div>
+
+
+      <div class="room-details-container">
+        <div class="logo-heading">
+            <h2 class="room-name">The Room:</h2>
+            <span style="margin-left: 6px;">Superior Twin Room</span>
+        </div>
+
+        <div class="logo-heading">
+          <h4>+ Quest Number: </h4>
+          <span style="margin-left: 6px;">2 Adult</span>
+        </div>
+
+        <img src="./Photos/clean.jpg">
+
+
+        <ul class="points-container">
+          <li class="point"><img src="./Photos/p1.jpg">18 M2</li>
+          <li class="point"><img src="./Photos/p2.jpg">City Center</li>
+        </ul>
+
+        <ul class="points-container">
+          <li class="point"><img src="./Photos/p3.jpg">Next To Forest</li>
+          <li class="point"><img src="./Photos/p4.jpg">En-suit Bathroom</li>
+          <li class="point"><img src="./Photos/p5.jpg">Flat-screen TV</li>
+        </ul>
+      </div>
+
+      <div class="payment-container">
+    <h1>Payment Information</h1>
+    <section class="price-summary">
+      <h2>Your Price Summary</h2>
+      <span>----------------------------------------------------------------------------------------------------------------------</span>
+      <p>Original Price: <span class="original-price">$960 (4 Nights)</span> </p>
+      <span>----------------------------------------------------------------------------------------------------------------------</span>
+      <p>EasySet24 Loyalty Discount (4%): <span class="discount" style="color:red">$100 Discount</span> </p>
+      <span>----------------------------------------------------------------------------------------------------------------------</span>
+      <p>Total Amount For Payment: <span class="total-price" style="color: green; font-size: 30px;">$860</span></p>
+    </section>
+
+    <section class="cancellation-policy">
+      <h2>Cancellation Policy</h2>
+      <p style="font-weight: bold;"><img src="./Photos/tick.jpg" style="vertical-align: middle;">Free Cancellation</p>
+      <p>Cancel / Rebook No Later Than 24 Hours Before, Otherwise You Pay 80% Of The Cost.</p>
+    </section>
+    <section class="pay-later">
+      <h2>Pay Part Now, Pay Later <input type="radio"></input></h2>
+      <p>Pay $200 Now, And The Rest ($660) Will Be Automatically Charged To The Same Payment Method On August 27, 2023. No Extra Fees.</p>
+    </section>
+  </div>
+  </div>
+
+      <div class="story-container">
+        <h1>Add To Your Stay</h1>
+
+        <section class="flight">
+          <p>
+            <input type="checkbox" id="flight">
+            <label for="flight" class="flight-label">I Will Need A Flight For My Trip</label>
+          </p>
+          <p class="special-offer"><img src="./Photos/flight.jpg">20% Special Offer If You Book A Flight</p>
+          <p>Flexible Flight Options From Stockholm To Turkiye From SLK 766/Round Trip. Finnish Booking</p>
+          <p>Select This Stay To Get Flight Recommendations That Match Your Selected Dates.</p>
+        </section>
+
+        <section class="taxi">
+          <p>
+            <input type="checkbox" id="taxi">
+            <label for="taxi" class="taxi-label">Want To Book A Taxi Or Shuttle Ride In Advance?</label>
+          </p>
+          <p class="special-offer"><img src="./Photos/taxi.jpg">10% Special Offer If You Rent A Taxi</p>
+          <p>Avoid Surprises_ Get From The Airport To Your Accommodation Without A Hitch.</p>
+          <p>We Will Add Taxi Options To Your Booking Confirmation.</p>
+        </section>
+
+        <section class="requests">
+          <h2>Special Requests</h2>
+          <p>Special Requests Can Not Be Guaranteed But The Property Will Do Its Best To Meet Your Needs.</p>
+          <p>You Can Always Make A Special Request After Your Booking Is Complete!</p>
+          <p>(Optional)</p>
+          <textarea rows="4" cols="50"></textarea>
+          <p>
+            <input type="checkbox" id="rooms">
+            <label for="rooms">I Would Like Rooms Close To Each Other</label>
+          </p>
+        </section>
+
+        <section class="arrival">
+          <h4>Your Arrival Time</h4>
+          <p><img src="./Photos/tick2.jpg">Your Rooms Will Be Ready For Check-in Between 15:00 And 23:00</p>
+          <label><img src="./Photos/clock.jpg">24-Hour Front Desk Help Wherever You Need It!</label>
+          <section class="estimated-arrival">
+            <h4>Add Your Estimated Arrival Time (Optional)</h4>
+            <p>Please Select</p>
+            <select id="arrival-time">
+              <option value="">Please Select</option>
+              <option value="before-1500">Before 15:00</option>
+              <option value="between-1500-2300">Between 15:00 - 23:00</option>
+              <option value="after-2300">After 23:00</option>
+            </select>
+          </section>
+          <p>Time for CET time zone</p>
+      </section>
+      </div>
+</div>
+
+  <div class="main3">
+
+    <div class="payment-container1">
+      <h3>Payment Methods</h3>
+
+      <div class="payment-method">
+        <label for="payment-dropdown">Payment Method:</label>
+        <select id="payment-dropdown">
+          <option value="paypal">PayPal</option>
+          <option value="Googlepay">Google Pay</option>
+          <option value="phonepay">Phone Pay</option>
+          <option value="paytm">Paytm</option>
+        </select>
+      </div>
+
+      <div class="booking-for-work">
+        <label for="booking-radio">Booking for Work:</label>
+        <input type="radio" id="booking-radio" name="booking" value="work">
+        <span>Yes</span>
+      </div>
+    </div>
+
+
+     <div class="bank-container">
+      <div class="bank-card-info">
+        <h3>Bank Card Information</h3>
+        <form action="#">
+          <div class="card-details">
+            <div class="carddiv">
+            <label for="full-name">Full Name On The Card</label>
+            <input type="text" id="full-name" name="full_name" placeholder="Enter Your Full Name" required>
+            </div>
+
+            <div class="carddiv">
+            <label for="card-number">Card Number</label>
+            <input type="tel" id="card-number" name="card_number" placeholder="Enter Card Number" required>
+            </div>
+
+            <div class="carddiv">
+            <label for="expiry-date">EXP Date</label>
+            <input type="text" id="expiry-date" name="expiry_date" placeholder="MM/YYYY" required>
+            </div>
+
+            <div class="carddiv">
+            <label for="cvv">CVC</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+            </div>
+          </div>
+          <div class="payment-buttons">
+            <button type="submit">Save In Shortcut</button>
+            <button type="button" onclick="validateCardDetails()">Payment</button>
+          </div>
+        </form>
+      </div>
+</div>
+</div>
+
+<footer class="footer-container">
+  <div class="footer-section">
+    <div class="column">
+      <h3>About Us</h3>
+      <ul>
+        <li>Our Story</li>
+        <li>Work with Us</li>
+        <li>Press and Media</li>
+        <li>Privacy and Security</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>We offer</h3>
+      <ul>
+        <li>Trip Sponsorship</li>
+        <li>Last Minute flights</li>
+        <li>Best deals</li>
+        <li>AI Driven search</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>Headquarters</h3>
+      <ul>
+        <li>England</li>
+        <li>France</li>
+        <li>Canada</li>
+        <li>Iceland</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>Travel Blogs</h3>
+      <ul>
+        <li>Bali Travel Guide</li>
+        <li>Sri Travel Guide</li>
+        <li>Peru Travel Guide</li>
+        <li>Swiss Travel Guide</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>Activites</h3>
+      <ul>
+        <li>Tour Leading</li>
+        <li>Cruising and sailing</li>
+        <li>Camping</li>
+        <li>kayaking</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>Service</h3>
+      <ul>
+        <li>Report Error</li>
+        <li>Ask Online</li>
+        <li>Travel Insurance</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-section">
+    <div class="column-footer">
+      <img src="./Photos/visa.jpg" alt="Logo 1">
+      <img src="./Photos/americanexpress.jpg" alt="Logo 2">
+      <img src="./Photos/mastercard.jpg" alt="Logo 3">
+      <img src="./Photos/paypal.jpg" alt="Logo 4">
+    </div>
+
+    <div class="column-footer">
+      <img src="./Photos/linkedin.jpg" alt="Icon 1">
+      <img src="./Photos/telegram.jpg" alt="Icon 2">
+      <img src="./Photos/twitter.jpg" alt="Icon 3">
+      <img src="./Photos/facebook.jpg" alt="Icon 3">
+      <img src="./Photos/instagram.jpg" alt="Icon 3">
+    </div>
+
+    <div class="column">
+      <h3>Email</h3>
+      <input type="email" placeholder="Enter your email">
+      <button class="subscribe-button">Subscribe</button>
+    </div>
+  </div>
+</footer>
+
+
+  
+  <script>
+      function validate() {
+
+    var firstName = document.getElementById('first-name').value;
+    var middleName = document.getElementById('middle-name').value;
+    var lastName = document.getElementById('last-name').value;
+
+    var nameRegex = /^[A-Za-z]+$/;
+    if (!nameRegex.test(firstName) || !nameRegex.test(middleName) || !nameRegex.test(lastName)) {
+      alert('Please enter valid names with only alphabets.');
+      return false;
+    }
+
+    var email = document.getElementById('email').value;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address.');
+      return false;
+    }
+
+    var phoneNumber = document.getElementById('phone-number').value;
+    var phoneRegex = /^\d{10}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      alert('Please enter a valid 10-digit phone number.');
+      return false;
+    }
+
+    var assistance = document.getElementById('assistance').value;
+    if (assistance === '') {
+      alert('Please choose an option for assistance.');
+      return false;
+    }
+
+    var region = document.getElementById('region').value;
+    if (region === '') {
+      alert('Please select a region/country.');
+      return false;
+    }
+
+    alert('Form validated successfully. Submitting...');
+    document.forms[0].submit();
+  }
+
+  function validateCardDetails() {
+    var fullName = document.getElementById("full-name").value;
+    var cardNumber = document.getElementById("card-number").value;
+    var expiryDate = document.getElementById("expiry-date").value;
+    var cvv = document.getElementById("cvv").value;
+
+    if (fullName.trim() === "") {
+      alert("Please enter your full name.");
+      return false;
+    }
+
+    if (isNaN(cardNumber) || cardNumber.length < 16) {
+      alert("Please enter a valid 16-digit card number.");
+      return false;
+    }
+
+    var today = new Date();
+    var enteredDate = new Date("01/" + expiryDate);
+    if (!/^(0[1-9]|1[0-2])\/\d{4}$/.test(expiryDate) || enteredDate <= today) {
+      alert("Please enter a valid future expiration date in MM/YYYY format.");
+      return false;
+    }
+
+    if (isNaN(cvv) || cvv.length !== 3) {
+      alert("Please enter a valid 3-digit CVV.");
+      return false;
+    }
+
+    alert("Card details are valid. Form submitted!");
+    return true;
+  }
+  </script>>
+
+
+
+  
+</body>
+</html>
+
